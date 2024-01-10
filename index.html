@@ -32,18 +32,18 @@
             <input type="text" id="result" placeholder="Result:" readonly>
             <br>
             <br>
-            <button class="add" onclick="addNum()">Add</button>
-            <button class="sub">Subtract</button>
-            <button class="div">Divide</button>
-            <button class="clear">Clear</button>
+            <button onclick="addNum()" type="button">Add</button>
+            <button type="button" onclick="sub()">Subtract</button>
+            <button type="button" onclick="div()">Divide</button>
+            <button type="button" onclick="clear()">Clear</button>
         </form>
     </div>
 
     <script>
         function addNum() {
 
-            var num1 = document.getElementById("num1").value;
-            var num2 = document.getElementById("num2").value;
+            var num1 = parseFloat(document.getElementById('num1').value);
+            var num2 = parseFloat(document.getElementById('num2').value);
 
             var result = num1 + num2;
 
