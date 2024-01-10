@@ -35,7 +35,8 @@
             <button onclick="addNum()" type="button">Add</button>
             <button type="button" onclick="sub()">Subtract</button>
             <button type="button" onclick="div()">Divide</button>
-            <button type="button" onclick="clear()">Clear</button>
+            <button type="button" onclick="mul()">Multiply</button>
+            <button>Clear</button>
         </form>
     </div>
 
@@ -49,6 +50,37 @@
 
             document.getElementById('result').value = result;
         }
+
+        function sub() {
+
+            var num1 = parseFloat(document.getElementById('num1').value);
+            var num2 = parseFloat(document.getElementById('num2').value);
+
+            var result = num1 - num2;
+
+            document.getElementById('result').value = result;
+        }
+
+        function div() {
+
+            var num1 = parseFloat(document.getElementById('num1').value);
+            var num2 = parseFloat(document.getElementById('num2').value);
+
+            var result = num1 / num2;
+
+            document.getElementById('result').value = result;
+        }
+
+        function mul() {
+
+            var num1 = parseFloat(document.getElementById('num1').value);
+            var num2 = parseFloat(document.getElementById('num2').value);
+
+            var result = num1 * num2;
+
+            document.getElementById('result').value = result;
+        }
+
 
     </script>
 </body>
